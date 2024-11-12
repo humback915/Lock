@@ -89,7 +89,7 @@ public class ProductServiceTest {
         int numberOfThreads = 10; // 동시에 실행할 스레드 개수
         ExecutorService executorService = Executors.newFixedThreadPool(numberOfThreads);
         CountDownLatch latch = new CountDownLatch(numberOfThreads);
-
+        // test
         for (int i = 0; i < numberOfThreads; i++) {
             executorService.submit(() -> {
                 try {
